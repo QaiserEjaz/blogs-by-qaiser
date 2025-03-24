@@ -81,7 +81,7 @@
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/QaiserEjaz/mern-blog.git
+git clone https://github.com/QaiserEjaz/blogs-by-qaiser.git
 cd mern-blog
  ```
 2. Install dependencies for both backend and frontend:
@@ -164,4 +164,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📞 Contact
 Qaiser - @twitter_handle
 
-Project Link: https://github.com/yourusername/mern-blog
+Project Link: https://github.com/QaiserEjaz/blogs-by-qaiser
