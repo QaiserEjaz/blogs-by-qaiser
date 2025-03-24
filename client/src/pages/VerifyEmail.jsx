@@ -22,7 +22,13 @@ export default function VerifyEmail() {
 
                 await applyActionCode(auth, oobCode);
                 setVerificationStatus('success');
-                setTimeout(() => navigate('/sign-in'), 3000);
+                
+                // Use requestIdleCallback for non-critical UI updates
+                const redirectTimeout = requestIdleCallback(() => {
+                navigate('/sign-in');
+                }, { timeout: 3000 });
+
+                return () => cancelIdleCallback(redirectTimeout);
             } catch (error) {
                 setVerificationStatus('error');
             }

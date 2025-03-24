@@ -88,9 +88,9 @@ export default function UpdatePost() {
       setImageUploadError(null);
       setFormData(prev => ({ ...prev, image: imageUrl }));
       
-      setTimeout(() => {
+      requestAnimationFrame(() => {
         setImageUploadProgress(null);
-      }, 1000);
+      });
       
     } catch (error) {
       console.error('Upload error:', error);

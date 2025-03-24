@@ -48,10 +48,10 @@ export default function CreatePost() {
       setImageUploadError(null);
       setFormData({ ...formData, image: imageUrl });
       
-      // Reset progress after a delay
-      setTimeout(() => {
+      // Use requestAnimationFrame for smoother UI updates
+      requestAnimationFrame(() => {
         setImageUploadProgress(null);
-      }, 1000);
+      });
       
     } catch (error) {
       setImageUploadError('Image upload failed');
