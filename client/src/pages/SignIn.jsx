@@ -68,6 +68,7 @@ export default function SignIn() {
                 type='email'
                 placeholder='name@company.com'
                 id='email'
+                autoComplete='email'
                 onChange={handleChange}
               />
             </div>
@@ -77,7 +78,7 @@ export default function SignIn() {
                 type='password'
                 id='password'
                 placeholder='Password'
-                autocomplete='current-password'
+                autoComplete='current-password'
                 onChange={handleChange}
               />
             </div>
